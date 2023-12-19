@@ -1,1 +1,46 @@
+---------------Install MariaDB---------------
 
+We update first in order to get the latest packages with 
+---> "sudo apt update"
+
+Then we will install the mariaDB server
+---> "sudo apt install mariadb-server"
+
+Start the mariaDB service
+---> "sudo systemctl start mariadb"
+
+Enable Access mariaDB
+---> "firewall-cmd --permanent --add-service=mysql
+---> "firewall-cmd --reload"
+
+then we will enable mysql security scripts
+---> "sudo mysql_secure_installation"
+      ------------------------------
+     enter current password for root(enter for none): <click enter>
+	   set root password? no
+	   remove anonymous users? yes
+	   disallow root login remotely? yes
+	   remove test database and access to it? yes
+	   reload privilage tables now? yes
+
+Check Status mariaDB
+---> "sudo systemctl status mariadb"
+      ● mariadb.service - MariaDB 10.11.4 database server
+     Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; preset: enabled)
+     Active: active (running) since Wed 2023-12-20 06:10:13 WIB; 1min 41s ago
+       Docs: man:mariadbd(8)
+             https://mariadb.com/kb/en/library/systemd/
+    Process: 565 ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld (code=exited, status=0/SUCCESS)
+    Process: 587 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)
+    Process: 600 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] && VAR= ||   VAR=`cd /usr/bin/..; /usr/bin/galera_recovery`; [ $? -eq 0 ]   && >
+    Process: 778 ExecStartPost=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)
+    Process: 784 ExecStartPost=/etc/mysql/debian-start (code=exited, status=0/SUCCESS)
+   Main PID: 700 (mariadbd)
+     Status: "Taking your SQL requests now..."
+      Tasks: 9 (limit: 4645)
+     Memory: 210.4M
+        CPU: 1.843s
+     CGroup: /system.slice/mariadb.service
+             └─700 /usr/sbin/mariadbd
+
+	 
