@@ -1,1 +1,15 @@
+---------------Install PHPv8---------------
 
+Update first
+---> "sudo apt update"
+
+Run the following commands to update your list of available packages, then then install PHP 8.1:
+---> "sudo apt install php libapache2-mod-php php-mysql -y"
+
+Check the version
+---> "php -v"
+      namenotf0und@debian:~$ php -v
+PHP 8.2.7 (cli) (built: Jun  9 2023 19:37:27) (NTS)
+Copyright (c) The PHP Group
+Zend Engine v4.2.7, Copyright (c) Zend Technologies
+    with Zend OPcache v8.2.7, Copyright (c), by Zend Technologies
