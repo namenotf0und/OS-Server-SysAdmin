@@ -5,4 +5,6 @@ What is needed to create a web server?:
 3. Webmin manajemen server berbasis web
 4. MariaDB
 5. PHPv8
-6. PhpMyAdmin 
+6. PhpMyAdmin
+7. Apache2
+8. WinSCP
