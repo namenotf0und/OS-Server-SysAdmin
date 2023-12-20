@@ -1,5 +1,12 @@
 -----Install Webmin Server Management-----
 
+What is Webmin?
+Webmin is a web-based server management control panel for Unix-like systems. 
+Webmin allows the user to configure operating system internals, such as users, disk quotas, services and configuration files, 
+as well as modify and control open-source apps, such as BIND, Apache HTTP Server, PHP, and MySQL.
+
+lets begin the installation and configuration.
+
 1. First, update your server’s package index
 ---> sudo apt update && sudo apt upgrade
 
@@ -21,3 +28,5 @@
 
   username : root
   password : <password>
+
+7. next, you will find dashboard page and lot tools which you can use it.
