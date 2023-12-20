@@ -7,7 +7,7 @@ What is needed to create a web server?:
 5. SSH Server
 
 
--------Perjalanan project--------
+-------My Journey about the project--------
 
 
 17 November 2023
@@ -19,6 +19,8 @@ What is needed to create a web server?:
 
 7 Desember 2023
 ---> Install Webmin & Add Website file
+---> brought a cheapest web domain
 
 8 Desember 2023
----> Tunneling
+---> register cloudflare account
+---> trying to tunneling my web server 
