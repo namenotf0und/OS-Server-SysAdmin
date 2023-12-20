@@ -1,1 +1,21 @@
-sudo apt update
+1. First, update your server’s package index
+---> sudo apt update && sudo apt upgrade
+
+2. Open the file in your preferred editor. Here, we’ll use nano
+---> sudo nano /etc/apt/sources.list
+
+3. Download the Webmin PGP key with wget and add it to your system’s list of keys:
+---> wget -q -O- http://www.webmin.com/jcameron-key.asc | sudo apt-key add
+
+4. Next, update the list of packages repo and then install Webmin
+---> sudo apt update
+---> sudo apt install webmin
+
+5. Wait until the process end, if you want to change the password for root login in webmin just using this command
+---> sudo /usr/share/webmin/changepass.pl /etc/webmin root [new password]
+
+6. Open your Web Browser Chrome/Edge and then type:
+---> https://<your server ip address>:10000
+
+  username : root
+  password : <password>
