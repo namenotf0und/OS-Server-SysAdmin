@@ -7,7 +7,9 @@ What is needed to create a web server?:
 5. SSH Server
 
 
-----------Perjalanan project-----------
+-------Perjalanan project--------
+
+
 17 November 2023
 ---> install Debian Os 
 ---> install & Config Web Server
