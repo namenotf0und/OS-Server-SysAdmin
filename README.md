@@ -7,3 +7,4 @@ What is needed to create a web server?:
 6. PHPv8
 7. PhpMyAdmin
 8. WinSCP
+9. SSH Server
