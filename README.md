@@ -34,5 +34,5 @@ So What is needed to create a web server?:
 ---> register cloudflare account
 ---> trying to tunneling my web server 
 
-                    -------Remineder-------
+-------Remineder-------
 if you needed the tutorial i will share on repo file. go check it!
