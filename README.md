@@ -1,4 +1,5 @@
 # FINAL PROJECT OS SERVER & SYSADMIN
+HELLO, IM RAFID.
 Before you read this page, im so sorry cuz im using english language to describe my final project. so take the note and read slowly.
 i want to introduce my final project web server first.
 what is web server?
@@ -33,5 +34,5 @@ So What is needed to create a web server?:
 ---> register cloudflare account
 ---> trying to tunneling my web server 
 
--------Remineder-------
+                    -------Remineder-------
 if you needed the tutorial i will share on repo file. go check it!
