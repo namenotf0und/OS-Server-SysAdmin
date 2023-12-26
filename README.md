@@ -37,9 +37,49 @@ So What is needed to create a web server?:
 -------Remineder-------
 if you needed the tutorial i will share on repo file. go check it!
 
+1. Step one Install Debian Os Server
+tsupp guys, in this page im gonna show you why im using this Operation System for my project and how to install this Os.
+by the way, there is os server except debian os which you can install, example:
+
+> Windows server
+> Ubuntu server
+> Centos
+> etc
 
 
-1. Step one Install Apache2 Web Server
+1. First, download the ISO file of Debian from the official website of Debian.
+
+2. Create a New Debian Virtual Machine
+
+3. First, set a name for the VM (for example Debian), then choose Linux
+   as the “Type” of the VM, and finally choose Debian (64bit) as the “Version”.
+
+4. now, click on the “ISO Image” and select the downloaded Debian ISO file
+   from the host operating system. Then, click on “Next”.
+
+5. In hardware settings, setting memory, 2 core processor, and click “Next”.
+
+6. Create a virtual hard disk of 60 GB, and hit “Next”.
+
+7. The following table in the image summarizes the configuration of the new virtual machine. Finally, click on “Finish”.
+
+8. start your vm.
+
+9. choose Graphical Install
+
+10. choose your language
+
+11. set a hostname and then continue
+
+12. set a domain name and then continue
+
+13. set your root password and then continue
+
+14. write full name and password of the user --> continue
+
+15. set up time zone, disk partition, and then click next until the system reboot.   
+
+2. Step two Install Apache2 Web Server
 
 There is 2 famous web server which lot of people using. Nginx and Apache webserver.
 As a Web server, Apache is responsible for accepting directory (HTTP) requests from Internet users and 
@@ -70,6 +110,7 @@ so lets begin!
 
 6. and then check status apache2
 ---> sudo systemctl status apache2
+   
   Output
 ● apache2.service - The Apache HTTP Server
      Loaded: loaded (/lib/systemd/system/apache2.service; enabled; vendor preset: enabled)
@@ -83,11 +124,11 @@ so lets begin!
              ├─29437 /usr/sbin/apache2 -k start
              └─29438 /usr/sbin/apache2 -k start
 
-7. open your web browser and then type this.
+8. open your web browser and then type this.
 ---> http://your_server_ip
  
-8. if you want something changes in your landing page so using this command
+9. if you want something changes in your landing page so using this command
 ---> sudo nano /var/www/your_domain/index.html
 
-9. make sure type this command after you change the index file
+10. make sure type this command after you change the index file
 ---> systemctl restart apache2
