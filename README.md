@@ -164,6 +164,9 @@ lets begin the installation and configuration.
    
      username : root
      password : <password>
+
+
+
    
    7. next, you will find dashboard page and lot tools which you can use it.
    
