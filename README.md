@@ -172,5 +172,38 @@ lets begin the installation and configuration.
    
 
 4. Step four Install WinSCP
+   ----Install & Setup Winscp----
+
+Let me introduce this apps first. what is Winscp actually? WinSCP is an open source free SFTP client, FTP client, WebDAV client,
+S3 client and SCP client and file manager for Windows.
+Its main function is file transfer between a local and a remote computer.
+Beyond this, WinSCP offers scripting and basic file manager functionality.
+
+   1. First of all Install the WinSCP Client.
+      It can be downloaded from http://winscp.sourceforge.net/ After downloading the package, run it.
+      Select "Full Installation" and choose your desired language.
    
+   2. Open the apps
+   
+   ---> install all users (recommended) > Next
+   ---> accept > Next
+   ---> Typical Installation (recommended) Next
+   ---> User interface > Commander > Next
+   ---> Finish
+   
+   3. after finish the installation, we will connect the sever using Winscp
+   
+   ---> file protocol > "STP"
+   ---> Host name > "<your server ip>"
+   ---> port > "22" (def)
+   ---> Username > "root"
+   ---> Password > "<your root password>"
+   ---> clik Login
+   
+   4. it can transfer file what you want 
+   
+   5. for me, Winscp very helpfully. lot of benefits if you using this apps like
+      WinSCP allows the synchronization of 2 directories, management data, transfer huge file.
+   
+      
 
